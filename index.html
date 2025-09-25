@@ -1,34 +1,58 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Buscador de Presidentes</title>
-  <script src="https://cdn.tailwindcss.com"></script>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Terminal — Buscador de Presidentes</title>
+
+  <!-- Fuente tipo "hacker" (Share Tech Mono). Puedes cambiar por VT323, OCR A, etc. -->
+  <link href="https://fonts.googleapis.com/css2?family=Share+Tech+Mono&display=swap" rel="stylesheet">
+
   <link rel="stylesheet" href="style.css" />
 </head>
-<body class="bg-gradient-to-br from-black via-gray-900 to-green-900 text-white min-h-screen flex items-center justify-center">
+<body>
+  <!-- Pantalla central -->
+  <div class="center">
+    <!-- mock terminal header -->
+    <div class="term-window">
+      <div class="term-header">
+        <div class="dots">
+          <span class="dot red"></span>
+          <span class="dot yellow"></span>
+          <span class="dot green"></span>
+        </div>
+        <div class="title">TERMINAL — Presidentes</div>
+      </div>
 
-  <!-- Panel central -->
-  <div class="bg-gray-950/90 rounded-2xl shadow-2xl w-[90%] max-w-4xl p-8">
-    <!-- Título -->
-    <h1 class="text-center text-3xl font-bold text-green-400 mb-6">🌍 Presidentes del Mundo</h1>
+      <!-- Area principal -->
+      <div class="term-body">
+        <!-- Buscador estilo terminal -->
+        <div class="search-wrap">
+          <label class="prompt">&gt;</label>
+          <input id="searchInput" autocomplete="off" placeholder="escribe nombre (ej: nicolas maduro)..." />
+        </div>
 
-    <!-- Barra de búsqueda -->
-    <div class="flex justify-center mb-6">
-      <input 
-        id="searchInput" 
-        type="text" 
-        placeholder="Busca un presidente..." 
-        class="w-full max-w-lg px-4 py-2 text-black rounded-md border-2 border-green-400 focus:outline-none focus:ring-2 focus:ring-green-500"
-      />
+        <!-- dropdown resultados -->
+        <ul id="results" class="results hidden"></ul>
+
+        <!-- info terminal-like -->
+        <div id="infoArea" class="info-area hidden">
+          <pre id="typingArea" class="typing"></pre>
+        </div>
+      </div>
     </div>
+  </div>
 
-    <!-- Resultados de búsqueda -->
-    <ul id="results" class="bg-gray-800 rounded-lg p-2 hidden"></ul>
-
-    <!-- Sección de información -->
-    <div id="infoSection" class="mt-6 hidden"></div>
+  <!-- Overlay de carga/boot -->
+  <div id="bootOverlay" class="boot-overlay hidden">
+    <div class="boot-screen">
+      <pre id="bootText" class="boot-text">
+Initializing...
+Loading national registry...
+Decrypting records...
+</pre>
+      <div class="boot-spinner"></div>
+    </div>
   </div>
 
   <script src="script.js"></script>
