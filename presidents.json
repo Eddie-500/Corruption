@@ -1,0 +1,338 @@
+[
+  {
+    "name": "Nicolás Maduro",
+    "country": "Venezuela",
+    "vigente": "Sí",
+    "tenure_start": "2013-04-19",
+    "tenure_years": 12,
+    "party": "PSUV",
+    "flag_url": "https://flagcdn.com/ve.svg",
+    "tipo": "accused",
+    "cantidad": null,
+    "valorCaptura": "$50,000,000",
+    "notable_contributions": "Conservación del control político; programas sociales subsidiados en períodos previos (CLAP).",
+    "acusaciones": "Sanciones y acusaciones por narcotráfico y corrupción; recompensa de EE. UU. por información que conduzca a su captura.",
+    "sources": [
+      "https://www.state.gov/reward-offer-increase-of-up-to-50-million-for-information-leading-to-arrest-and-or-conviction-of-nicolas-maduro",
+      "https://www.reuters.com/world/americas/us-increases-reward-arrest-venezuelas-maduro-50-million-2025-08-08/"
+    ]
+  },
+  {
+    "name": "Nayib Bukele",
+    "country": "El Salvador",
+    "vigente": "Sí",
+    "tenure_start": "2019-06-01",
+    "tenure_years": 6,
+    "party": "Nuevas Ideas",
+    "flag_url": "https://flagcdn.com/sv.svg",
+    "tipo": "controversial",
+    "cantidad": null,
+    "valorCaptura": null,
+    "notable_contributions": "Gran reducción de homicidios atribuida a la política de seguridad contra pandillas (datos oficiales 2023).",
+    "acusaciones": "Señalamientos de violaciones a derechos humanos y detenciones masivas durante el régimen de excepción.",
+    "sources": [
+      "https://www.reuters.com/world/americas/el-salvador-says-murders-fell-70-2023-it-cracked-down-gangs-2024-01-03/"
+    ]
+  },
+  {
+    "name": "Claudia Sheinbaum",
+    "country": "México",
+    "vigente": "Sí",
+    "tenure_start": "2024-10-01",
+    "tenure_years": 1,
+    "party": "Morena",
+    "flag_url": "https://flagcdn.com/mx.svg",
+    "tipo": "controversial",
+    "cantidad": null,
+    "valorCaptura": null,
+    "notable_contributions": "Primera mujer presidenta de México; impulso de reformas sociales y de justicia.",
+    "acusaciones": "Debate político por reformas judiciales y continuidad de políticas de la administración previa.",
+    "sources": [
+      "https://www.reuters.com/world/americas/mexicos-sheinbaum-takes-office-making-history-first-woman-president-2024-10-01/",
+      "https://www.reuters.com/world/americas/sheinbaum-be-sworn-first-woman-president-mexican-history-2024-10-01/"
+    ]
+  },
+  {
+    "name": "Javier Milei",
+    "country": "Argentina",
+    "vigente": "Sí",
+    "tenure_start": "2023-12-10",
+    "tenure_years": 1,
+    "party": "LLA",
+    "flag_url": "https://flagcdn.com/ar.svg",
+    "tipo": "controversial",
+    "cantidad": null,
+    "valorCaptura": null,
+    "notable_contributions": "Paquete de ajuste fiscal y desregulación; descenso fuerte de la inflación mensual en 2025.",
+    "acusaciones": "Cuestionamientos y causas políticas/financieras en investigación en su entorno.",
+    "sources": [
+      "https://www.reuters.com/world/americas/argentina-inflation-cools-may-lowest-over-five-years-2025-06-12/",
+      "https://www.wsj.com/world/americas/argentina-milei-inflation-economy-help-96966c6d",
+      "https://www.ft.com/content/270d9987-9b42-4ccf-83e8-cb6fe57faab7"
+    ]
+  },
+  {
+    "name": "Gustavo Petro",
+    "country": "Colombia",
+    "vigente": "Sí",
+    "tenure_start": "2022-08-07",
+    "tenure_years": 3,
+    "party": "Pacto Histórico (Colombia Humana)",
+    "flag_url": "https://flagcdn.com/co.svg",
+    "tipo": "controversial",
+    "cantidad": null,
+    "valorCaptura": null,
+    "notable_contributions": "Agenda de reformas sociales y energéticas; diálogo con grupos armados.",
+    "acusaciones": "Investigaciones sobre financiación de campaña 2022 y casos de contratación (UNGRD).",
+    "sources": [
+      "https://www.reuters.com/world/americas/colombia-electoral-authority-requests-investigation-into-petro-campaign-2024-10-08/",
+      "https://www.reuters.com/world/americas/colombia-prosecutors-weigh-immunity-ex-officials-government-corruption-case-2024-05-07/"
+    ]
+  },
+  {
+    "name": "Luiz Inácio Lula da Silva",
+    "country": "Brasil",
+    "vigente": "Sí",
+    "tenure_start": "2023-01-01",
+    "tenure_years": 2,
+    "party": "PT",
+    "flag_url": "https://flagcdn.com/br.svg",
+    "tipo": "controversial",
+    "cantidad": null,
+    "valorCaptura": null,
+    "notable_contributions": "Relanzamiento de programas sociales y agenda ambiental; retorno de Brasil a foros multilaterales.",
+    "acusaciones": "Condenas de 'Lava Jato' anuladas por la Corte Suprema en 2021.",
+    "sources": [
+      "https://www.reuters.com/world/americas/brazils-supreme-court-confirms-decision-annul-lula-convictions-2021-04-15/",
+      "https://www.reuters.com/article/world/brazil-judge-annuls-lulas-convictions-opens-door-to-2022-run-idUSKBN2B029W/"
+    ]
+  },
+  {
+    "name": "Gabriel Boric",
+    "country": "Chile",
+    "vigente": "Sí",
+    "tenure_start": "2022-03-11",
+    "tenure_years": 3,
+    "party": "Apruebo Dignidad / CS",
+    "flag_url": "https://flagcdn.com/cl.svg",
+    "tipo": "controversial",
+    "cantidad": null,
+    "valorCaptura": null,
+    "notable_contributions": "Agenda de derechos y reformas sociales; impulso de debates constitucionales.",
+    "acusaciones": "Investigación preliminar por denuncia de acoso sexual (2024).",
+    "sources": [
+      "https://www.reuters.com/world/americas/chilean-prosecutors-probe-sexual-harassment-complaint-against-president-2024-11-26/"
+    ]
+  },
+  {
+    "name": "Dina Boluarte",
+    "country": "Perú",
+    "vigente": "Sí",
+    "tenure_start": "2022-12-07",
+    "tenure_years": 2,
+    "party": "Independiente",
+    "flag_url": "https://flagcdn.com/pe.svg",
+    "tipo": "controversial",
+    "cantidad": null,
+    "valorCaptura": null,
+    "notable_contributions": "Transición institucional tras destitución de Castillo; manejo de crisis política.",
+    "acusaciones": "Altas tensiones y protestas con señalamientos de uso excesivo de la fuerza.",
+    "sources": [
+      "https://www.reuters.com/world/americas/peruvian-politician-boluarte-swears-interim-president-after-castillos-removal-2022-12-07/",
+      "https://www.reuters.com/world/americas/dina-boluarte-perus-first-female-president-pledges-heal-nations-wounds-2022-12-08/"
+    ]
+  },
+  {
+    "name": "Luis Arce",
+    "country": "Bolivia",
+    "vigente": "Sí",
+    "tenure_start": "2020-11-08",
+    "tenure_years": 4,
+    "party": "MAS",
+    "flag_url": "https://flagcdn.com/bo.svg",
+    "tipo": "controversial",
+    "cantidad": null,
+    "valorCaptura": null,
+    "notable_contributions": "Retorno del MAS al poder; políticas económicas de reactivación post-2020.",
+    "acusaciones": "Críticas por tensiones con oposición y manejo de justicia.",
+    "sources": [
+      "https://www.reuters.com/article/world/bolivia-s-socialists-sweep-back-to-power-as-arce-sworn-in-as-president-idUSKBN27O0R7/"
+    ]
+  },
+  {
+    "name": "Daniel Noboa",
+    "country": "Ecuador",
+    "vigente": "Sí",
+    "tenure_start": "2023-11-23",
+    "tenure_years": 2,
+    "party": "Acción Democrática Nacional (ADN)",
+    "flag_url": "https://flagcdn.com/ec.svg",
+    "tipo": "controversial",
+    "cantidad": null,
+    "valorCaptura": null,
+    "notable_contributions": "Enfoque en seguridad y reformas urgentes para reducir violencia.",
+    "acusaciones": "Críticas por manejo de crisis de seguridad y medidas de excepción.",
+    "sources": [
+      "https://www.reuters.com/world/americas/ecuador-swear-millennial-businessman-noboa-president-2023-11-23/"
+    ]
+  },
+  {
+    "name": "Luis Lacalle Pou",
+    "country": "Uruguay",
+    "vigente": "Sí",
+    "tenure_start": "2020-03-01",
+    "tenure_years": 5,
+    "party": "Partido Nacional",
+    "flag_url": "https://flagcdn.com/uy.svg",
+    "tipo": "no_major_accusations_reported",
+    "cantidad": null,
+    "valorCaptura": null,
+    "notable_contributions": "Reformas pro-mercado; gestión de pandemia reconocida regionalmente.",
+    "acusaciones": "Sin acusaciones mayores reportadas a nivel internacional.",
+    "sources": [
+      "https://www.reuters.com/article/world/uruguay-presidential-inauguration-sees-latin-pink-tide-recede-further-idUSKBN20O262/"
+    ]
+  },
+  {
+    "name": "Santiago Peña",
+    "country": "Paraguay",
+    "vigente": "Sí",
+    "tenure_start": "2023-08-15",
+    "tenure_years": 2,
+    "party": "Partido Colorado",
+    "flag_url": "https://flagcdn.com/py.svg",
+    "tipo": "no_major_accusations_reported",
+    "cantidad": null,
+    "valorCaptura": null,
+    "notable_contributions": "Continuidad macroeconómica; alineamiento diplomático con Taiwán.",
+    "acusaciones": "Críticas opositoras por influencia del expresidente Cartes.",
+    "sources": [
+      "https://www.reuters.com/world/americas/new-paraguayan-president-santiago-pena-sworn-2023-08-15/"
+    ]
+  },
+  {
+    "name": "José Raúl Mulino",
+    "country": "Panamá",
+    "vigente": "Sí",
+    "tenure_start": "2024-07-01",
+    "tenure_years": 1,
+    "party": "Realizando Metas (RM)",
+    "flag_url": "https://flagcdn.com/pa.svg",
+    "tipo": "controversial",
+    "cantidad": null,
+    "valorCaptura": null,
+    "notable_contributions": "Acuerdo con EE. UU. para frenar paso irregular por Darién; enfoque en crecimiento y empleo.",
+    "acusaciones": "Críticas por posición dura en migración y cercanía a Ricardo Martinelli.",
+    "sources": [
+      "https://www.reuters.com/world/americas/panamas-new-president-promises-curb-illegal-migration-boost-economy-2024-07-01/",
+      "https://www.reuters.com/world/americas/panamanians-vote-crowded-field-presidential-contenders-2024-05-05/"
+    ]
+  },
+  {
+    "name": "Rodrigo Chaves",
+    "country": "Costa Rica",
+    "vigente": "Sí",
+    "tenure_start": "2022-05-08",
+    "tenure_years": 3,
+    "party": "PPSD",
+    "flag_url": "https://flagcdn.com/cr.svg",
+    "tipo": "controversial",
+    "cantidad": null,
+    "valorCaptura": null,
+    "notable_contributions": "Agenda de consolidación fiscal y reformas administrativas.",
+    "acusaciones": "Procesos y mociones políticas en su contra; controversias por manejo de fondos y comunicación.",
+    "sources": [
+      "https://www.reuters.com/world/americas/costa-ricas-new-president-takes-office-vows-tackle-debt-2022-05-08/",
+      "https://apnews.com/article/5936df35a2bf50a0160ca3e85a937565"
+    ]
+  },
+  {
+    "name": "Bernardo Arévalo",
+    "country": "Guatemala",
+    "vigente": "Sí",
+    "tenure_start": "2024-01-15",
+    "tenure_years": 1,
+    "party": "Movimiento Semilla",
+    "flag_url": "https://flagcdn.com/gt.svg",
+    "tipo": "no_major_accusations_reported",
+    "cantidad": null,
+    "valorCaptura": null,
+    "notable_contributions": "Agenda anticorrupción y de fortalecimiento institucional.",
+    "acusaciones": "Obstáculos políticos y judiciales a su investidura y agenda.",
+    "sources": [
+      "https://www.reuters.com/world/americas/reformist-arevalo-assumes-guatemalan-presidency-after-opposition-delays-2024-01-15/"
+    ]
+  },
+  {
+    "name": "Xiomara Castro",
+    "country": "Honduras",
+    "vigente": "Sí",
+    "tenure_start": "2022-01-27",
+    "tenure_years": 3,
+    "party": "LIBRE",
+    "flag_url": "https://flagcdn.com/hn.svg",
+    "tipo": "controversial",
+    "cantidad": null,
+    "valorCaptura": null,
+    "notable_contributions": "Reformas sociales y lucha contra la corrupción; derogación de Zonas de Empleo y Desarrollo Económico (ZEDE).",
+    "acusaciones": "Críticas por seguridad y economía; tensiones con Legislativo.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Xiomara_Castro"
+    ]
+  },
+  {
+    "name": "Daniel Ortega",
+    "country": "Nicaragua",
+    "vigente": "Sí",
+    "tenure_start": "2007-01-10",
+    "tenure_years": 18,
+    "party": "FSLN",
+    "flag_url": "https://flagcdn.com/ni.svg",
+    "tipo": "accused",
+    "cantidad": null,
+    "valorCaptura": null,
+    "notable_contributions": "Amplio control del Estado; programas sociales previos.",
+    "acusaciones": "Informes de la ONU y ONGs señalan represión sistemática y persecución de críticos; concentración de poder.",
+    "sources": [
+      "https://www.reuters.com/world/americas/nicaragua-congress-gives-final-approval-sweeping-constitutional-reforms-2025-01-30/",
+      "https://www.reuters.com/world/americas/ortega-murillo-presidential-couple-with-an-iron-grip-nicaragua-2021-11-05/",
+      "https://apnews.com/article/f7395e342adef9e0f585b9806ab04ccd"
+    ]
+  },
+  {
+    "name": "Luis Abinader",
+    "country": "República Dominicana",
+    "vigente": "Sí",
+    "tenure_start": "2020-08-16",
+    "tenure_years": 5,
+    "party": "PRM",
+    "flag_url": "https://flagcdn.com/do.svg",
+    "tipo": "no_major_accusations_reported",
+    "cantidad": null,
+    "valorCaptura": null,
+    "notable_contributions": "Reformas económicas y sociales; reelección en 2024.",
+    "acusaciones": "Críticas políticas y manejo de relación con Haití.",
+    "sources": [
+      "https://www.reuters.com/world/americas/dominican-republics-abinader-names-cabinet-posts-leaders-gather-inauguration-2024-08-16/",
+      "https://www.reuters.com/world/americas/dominican-republics-president-elect-abinader-takes-tough-stand-graft-haiti-2024-05-20/"
+    ]
+  },
+  {
+    "name": "Miguel Díaz-Canel",
+    "country": "Cuba",
+    "vigente": "Sí",
+    "tenure_start": "2019-10-10",
+    "tenure_years": 5,
+    "party": "Partido Comunista de Cuba",
+    "flag_url": "https://flagcdn.com/cu.svg",
+    "tipo": "controversial",
+    "cantidad": null,
+    "valorCaptura": null,
+    "notable_contributions": "Continuidad del régimen; reelección por la Asamblea Nacional (2023).",
+    "acusaciones": "Crisis económica y migratoria; críticas por restricciones a libertades y protestas.",
+    "sources": [
+      "https://www.reuters.com/world/americas/cuban-lawmakers-vote-president-amid-crisis-no-change-expected-2023-04-19/",
+      "https://en.wikipedia.org/wiki/Miguel_D%C3%ADaz-Canel"
+    ]
+  }
+]
