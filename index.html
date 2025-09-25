@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Buscador de Presidentes</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body class="bg-gradient-to-br from-black via-gray-900 to-green-900 text-white min-h-screen flex items-center justify-center">
+
+  <!-- Panel central -->
+  <div class="bg-gray-950/90 rounded-2xl shadow-2xl w-[90%] max-w-4xl p-8">
+    <!-- Título -->
+    <h1 class="text-center text-3xl font-bold text-green-400 mb-6">🌍 Presidentes del Mundo</h1>
+
+    <!-- Barra de búsqueda -->
+    <div class="flex justify-center mb-6">
+      <input 
+        id="searchInput" 
+        type="text" 
+        placeholder="Busca un presidente..." 
+        class="w-full max-w-lg px-4 py-2 text-black rounded-md border-2 border-green-400 focus:outline-none focus:ring-2 focus:ring-green-500"
+      />
+    </div>
+
+    <!-- Resultados de búsqueda -->
+    <ul id="results" class="bg-gray-800 rounded-lg p-2 hidden"></ul>
+
+    <!-- Sección de información -->
+    <div id="infoSection" class="mt-6 hidden"></div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
