@@ -3,15 +3,35 @@ const presidents = [
     name: "Nicolás Maduro",
     country: "Venezuela",
     vigente: "Sí",
-    cantidadRobada: "$2,000,000,000",
+    tipo: "corrupto",
+    cantidad: 2000000000,
     valorCaptura: "$15,000,000",
     acusado: "Corrupción, narcotráfico"
+  },
+  {
+    name: "Nelson Mandela",
+    country: "Sudáfrica",
+    vigente: "No",
+    tipo: "honesto",
+    cantidad: 500000000, // aportado
+    valorCaptura: "N/A",
+    acusado: "Ninguno"
+  },
+  {
+    name: "Andrés Manuel López Obrador",
+    country: "México",
+    vigente: "Sí",
+    tipo: "honesto",
+    cantidad: 120000000, // aportado
+    valorCaptura: "N/A",
+    acusado: "Ninguno"
   },
   {
     name: "Vladimir Putin",
     country: "Rusia",
     vigente: "Sí",
-    cantidadRobada: "$200,000,000,000",
+    tipo: "corrupto",
+    cantidad: 200000000000,
     valorCaptura: "N/A",
     acusado: "Violaciones a DDHH, corrupción"
   }
@@ -48,11 +68,17 @@ function showInfo(president) {
   searchInput.value = president.name;
 
   infoSection.classList.remove("hidden");
+
+  // Colores dinámicos según tipo
+  const cantidadLabel = president.tipo === "corrupto" ? "Cantidad robada" : "Cantidad aportada";
+  const cantidadColor = president.tipo === "corrupto" ? "text-red-400" : "text-green-400";
+  const cardClass = president.tipo === "corrupto" ? "card card-red" : "card card-green";
+
   infoSection.innerHTML = `
-    <div class="card card-green">
+    <div class="${cardClass}">
       <h2 class="text-xl font-bold mb-2">${president.name} - ${president.country}</h2>
       <p><strong>Vigente:</strong> ${president.vigente}</p>
-      <p><strong>Cantidad robada:</strong> ${president.cantidadRobada}</p>
+      <p><strong>${cantidadLabel}:</strong> <span class="${cantidadColor}">$${president.cantidad.toLocaleString()}</span></p>
       <p><strong>Valor por captura:</strong> ${president.valorCaptura}</p>
       <p><strong>Acusado de:</strong> ${president.acusado}</p>
     </div>
