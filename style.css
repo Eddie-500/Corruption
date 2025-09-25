@@ -1,31 +1,170 @@
-.card {
-  border-radius: 1rem;
-  padding: 1rem;
-  margin-bottom: 1rem;
-  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
-  transition: transform 0.2s ease, box-shadow 0.2s ease;
+:root{
+  --bg:#010101;
+  --panel:#021008;
+  --green:#39ff14;
+  --muted:#0f1720;
+  --red:#ff3b3b;
+  --glass: rgba(0,0,0,0.55);
 }
 
-.card:hover {
-  transform: scale(1.02);
-  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.5);
+/* Global */
+*{box-sizing:border-box}
+html,body{height:100%}
+body{
+  margin:0;
+  font-family: 'Share Tech Mono', monospace;
+  background: radial-gradient(circle at 10% 10%, #071409 0%, #000 40%), #000;
+  color:var(--green);
+  -webkit-font-smoothing:antialiased;
+  -moz-osx-font-smoothing:grayscale;
 }
 
-.card-green {
-  background-color: rgba(34, 197, 94, 0.15);
-  border: 1px solid rgba(34, 197, 94, 0.5);
+/* Centering */
+.center{
+  min-height:100vh;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  padding:24px;
 }
 
-.card-orange {
-  background-color: rgba(251, 146, 60, 0.15);
-  border: 1px solid rgba(251, 146, 60, 0.5);
+/* Terminal window */
+.term-window{
+  width:920px;
+  max-width:95%;
+  border-radius:10px;
+  background: linear-gradient(180deg, rgba(0,0,0,0.85), rgba(2,10,8,0.95));
+  border: 2px solid rgba(57,255,20,0.06);
+  box-shadow: 0 20px 60px rgba(0,0,0,0.8), 0 0 30px rgba(57,255,20,0.02);
+  overflow:hidden;
 }
 
-.card-red {
-  background-color: rgba(239, 68, 68, 0.15);
-  border: 1px solid rgba(239, 68, 68, 0.5);
+/* header */
+.term-header{
+  display:flex;
+  align-items:center;
+  gap:12px;
+  padding:10px 14px;
+  background:linear-gradient(90deg, rgba(57,255,20,0.02), rgba(0,0,0,0.06));
+  border-bottom:1px solid rgba(255,255,255,0.03);
+}
+.dots{display:flex;gap:6px}
+.dot{width:11px;height:11px;border-radius:50%;display:inline-block;box-shadow:0 1px 0 rgba(0,0,0,0.6) inset}
+.dot.red{background:#ff5f57}
+.dot.yellow{background:#ffbd2e}
+.dot.green{background:#27c93f}
+.title{flex:1;text-align:center;color:rgba(57,255,20,0.95);font-size:14px}
+
+/* body */
+.term-body{padding:20px}
+
+/* search */
+.search-wrap{
+  display:flex;
+  align-items:center;
+  gap:8px;
+  background: linear-gradient(180deg, rgba(0,0,0,0.35), rgba(0,0,0,0.45));
+  border: 2px solid rgba(57,255,20,0.9); /* borde verde brillante */
+  padding:12px;
+  border-radius:6px;
+  box-shadow: 0 6px 18px rgba(0,0,0,0.6);
+}
+.prompt{color:var(--green);font-size:18px;margin-right:4px}
+#searchInput{
+  flex:1;
+  background:transparent;
+  border:0;
+  outline:none;
+  color:var(--green);
+  font-size:18px;
+  padding:6px 8px;
+  caret-color:var(--green);
 }
 
-button {
-  transition: all 0.2s ease;
+/* results dropdown */
+.results{
+  margin-top:10px;
+  max-height:200px;
+  overflow:auto;
+  border-radius:6px;
+  border:1px solid rgba(57,255,20,0.06);
+  background:rgba(0,0,0,0.6);
+  padding:6px;
+  list-style:none;
 }
+.results li{
+  padding:8px 10px;
+  cursor:pointer;
+  color: #bfffbf;
+  border-radius:4px;
+  transition:transform .08s ease, background .12s ease;
+}
+.results li:hover{
+  background:rgba(57,255,20,0.06);
+  transform:translateX(4px);
+}
+
+/* info area (terminal output) */
+.info-area{
+  margin-top:18px;
+  background: rgba(2,10,8,0.6);
+  border-radius:6px;
+  padding:12px;
+  min-height:140px;
+  border:1px solid rgba(57,255,20,0.04);
+}
+.typing{
+  margin:0;
+  color:var(--green);
+  white-space:pre-wrap;
+  line-height:1.5;
+  font-size:16px;
+}
+
+/* colored spans for amount */
+.amount-green{color: #7fff7f; font-weight:700}
+.amount-red{color: #ff8b8b; font-weight:700}
+
+/* boot overlay */
+.boot-overlay{
+  position:fixed;
+  inset:0;
+  background:linear-gradient(180deg,#00140a,#000);
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  z-index:999;
+}
+.boot-screen{
+  width:80%;
+  max-width:900px;
+  background:rgba(0,0,0,0.85);
+  border:1px solid rgba(57,255,20,0.05);
+  padding:26px;
+  border-radius:8px;
+  box-shadow:0 20px 60px rgba(0,0,0,0.8);
+}
+.boot-text{
+  color:var(--green);
+  margin:0;
+  font-size:14px;
+  line-height:1.6;
+  min-height:90px;
+}
+
+/* small spinner */
+.boot-spinner{
+  margin-top:18px;
+  width:36px;
+  height:36px;
+  border-radius:50%;
+  border:4px solid rgba(57,255,20,0.12);
+  border-top-color:var(--green);
+  animation:spin 1s linear infinite;
+  margin-left:auto;
+  margin-right:auto;
+}
+@keyframes spin { to { transform:rotate(360deg);} }
+
+/* helpers */
+.hidden{display:none}
