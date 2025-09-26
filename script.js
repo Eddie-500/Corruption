@@ -1,5 +1,5 @@
 // ----------------------
-// Buscador de Presidentes (versión terminal hacker)
+// Buscador de Presidentes (terminal hacker) - versión sin fuentes
 // ----------------------
 
 let presidents = [];
@@ -8,9 +8,9 @@ let presidents = [];
 fetch("presidents.json")
   .then(r => r.json())
   .then(json => { presidents = json; })
-  .catch(err => console.error("Error cargando presidents.json", err));
+  .catch(err => { console.error("Error cargando presidents.json", err); });
 
-// Elementos
+// DOM
 const searchInput = document.getElementById("searchInput");
 const results = document.getElementById("results");
 const infoArea = document.getElementById("infoArea");
@@ -50,7 +50,7 @@ function selectPresident(president) {
   showBootScreen(president);
 }
 
-// Pantalla de carga
+// Boot overlay
 function showBootScreen(president) {
   bootOverlay.classList.remove("hidden");
   bootText.textContent = "";
@@ -69,49 +69,60 @@ function showBootScreen(president) {
       setTimeout(() => {
         bootOverlay.classList.add("hidden");
         renderTypingInfo(president);
-      }, 800);
+      }, 700);
     }
-  }, 500);
+  }, 450);
 }
 
-// Typing effect
+// Typing + render
 async function renderTypingInfo(president) {
   infoArea.classList.remove("hidden");
   typingArea.textContent = "";
 
+  // Etiqueta y formato cantidad según tipo
   const cantidadLabel =
     president.tipo === "accused" ? "Cantidad robada" :
-    president.tipo === "controversial" ? "Cantidad estimada" :
-    "Cantidad aportada";
+    president.tipo === "no_major_accusations_reported" ? "Cantidad aportada" :
+    "Cantidad (estimada)";
 
-  const formattedAmount =
-    president.cantidad ? "$" + Number(president.cantidad).toLocaleString() : "N/A";
+  const formattedAmount = (president.cantidad !== null && president.cantidad !== undefined)
+    ? "$" + Number(president.cantidad).toLocaleString()
+    : "N/D";
+
+  const amountClass =
+    (president.cantidad !== null && president.cantidad !== undefined)
+      ? (president.tipo === "accused" ? "amount-red" : (president.tipo === "no_major_accusations_reported" ? "amount-green" : "amount-orange"))
+      : "amount-muted";
 
   const lines = [
     `Nombre: ${president.name} — ${president.country}`,
     `Partido: ${president.party || "N/A"}`,
     `Vigente: ${president.vigente}`,
-    `Inicio de mandato: ${president.tenure_start} (${president.tenure_years} años)`,
+    `Inicio de mandato: ${president.tenure_start} (${president.tenure_years || "N/D"} años)`,
     `${cantidadLabel}: ${formattedAmount}`,
     `Valor por captura: ${president.valorCaptura || "N/A"}`,
     `Contribuciones notables: ${president.notable_contributions || "N/A"}`,
-    `Acusaciones: ${president.acusaciones || "Ninguna"}`
+    `Acusaciones: ${president.acusaciones || "Ninguna"}`,
+    `---- FIN DEL REPORTE ----`
   ];
 
+  // escribimos cada línea
   for (let line of lines) {
     await typeLine(line);
-    await wait(250 + Math.random() * 300);
+    await wait(200 + Math.random() * 300);
   }
 
-  // Agrega link a fuentes
-  appendSourcesLink(president);
+  // colorear la parte del monto (post-proc) si hay monto real
+  if (formattedAmount !== "N/D") {
+    colorAmountInTyping(cantidadLabel, formattedAmount, amountClass);
+  }
 }
 
-// Escribir línea con pausas
+// typing line
 function typeLine(text) {
   return new Promise(resolve => {
     let idx = 0;
-    const speed = 20 + Math.random() * 30;
+    const speed = 16 + Math.random() * 26;
     const interval = setInterval(() => {
       typingArea.textContent += text[idx];
       idx++;
@@ -124,19 +135,14 @@ function typeLine(text) {
   });
 }
 
+// colorea el monto en la salida typing (reemplazo simple)
+function colorAmountInTyping(label, amountText, amountClass) {
+  const html = typingArea.innerHTML;
+  const target = `${label}: ${amountText}`;
+  if (html.includes(target)) {
+    const replaced = html.replace(target, `${label}: <span class="${amountClass}">${amountText}</span>`);
+    typingArea.innerHTML = replaced;
+  }
+}
+
 function wait(ms) { return new Promise(res => setTimeout(res, ms)); }
-
-// ----------------------
-// 🔹 Helpers para fuentes
-// ----------------------
-function slugify(text){
-  return text.toLowerCase()
-    .normalize('NFKD').replace(/[^\w\s-]/g,'').replace(/[\u0300-\u036f]/g,'')
-    .replace(/\s+/g,'-').replace(/-+/g,'-');
-}
-
-function appendSourcesLink(president){
-  const id = slugify(president.country + '-' + president.name);
-  typingArea.innerHTML +=
-    `\n<a href="sources.html#${id}" target="_blank" rel="noopener">Aquí están las fuentes</a>\n`;
-}
