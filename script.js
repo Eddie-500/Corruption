@@ -80,22 +80,17 @@ async function renderTypingInfo(president) {
   typingArea.textContent = "";
 
   // Etiqueta y formato cantidad según tipo
-  const cantidadLabel =
-    president.tipo === "accused" ? "Cantidad robada" :
-    president.tipo === "no_major_accusations_reported" ? "Cantidad aportada" :
-    "Cantidad (estimada)";
+  const cantidadLabel = getCantidadLabel(president.tipo);
+  const { displayValue: formattedAmount, shouldHighlight } = formatAmount(president.cantidad);
+  const amountClass = shouldHighlight
+    ? getAmountClass(president.tipo)
+    : "amount-muted";
 
-  const formattedAmount = (president.cantidad !== null && president.cantidad !== undefined)
-    ? "$" + Number(president.cantidad).toLocaleString()
-    : "N/D";
-
-  const amountClass =
-    (president.cantidad !== null && president.cantidad !== undefined)
-      ? (president.tipo === "accused" ? "amount-red" : (president.tipo === "no_major_accusations_reported" ? "amount-green" : "amount-orange"))
-      : "amount-muted";
+  const tipoDescripcion = describeTipo(president.tipo);
 
   const lines = [
     `Nombre: ${president.name} — ${president.country}`,
+    `Tipo de registro: ${tipoDescripcion}`,
     `Partido: ${president.party || "N/A"}`,
     `Vigente: ${president.vigente}`,
     `Inicio de mandato: ${president.tenure_start} (${president.tenure_years || "N/D"} años)`,
@@ -113,7 +108,7 @@ async function renderTypingInfo(president) {
   }
 
   // colorear la parte del monto (post-proc) si hay monto real
-  if (formattedAmount !== "N/D") {
+  if (shouldHighlight) {
     colorAmountInTyping(cantidadLabel, formattedAmount, amountClass);
   }
 }
@@ -146,3 +141,52 @@ function colorAmountInTyping(label, amountText, amountClass) {
 }
 
 function wait(ms) { return new Promise(res => setTimeout(res, ms)); }
+
+function getCantidadLabel(tipo) {
+  switch (tipo) {
+    case "accused":
+      return "Cantidad robada";
+    case "no_major_accusations_reported":
+      return "Cantidad aportada";
+    default:
+      return "Cantidad (estimada)";
+  }
+}
+
+function formatAmount(value) {
+  const hasValue = value !== null && value !== undefined && String(value).trim() !== "";
+  if (!hasValue) {
+    return { displayValue: "N/D", shouldHighlight: false };
+  }
+
+  if (typeof value === "number" && Number.isFinite(value)) {
+    const formattedNumber = new Intl.NumberFormat("es-ES", {
+      style: "currency",
+      currency: "USD",
+      maximumFractionDigits: 0,
+      minimumFractionDigits: 0
+    }).format(value);
+    return { displayValue: formattedNumber, shouldHighlight: true };
+  }
+
+  return { displayValue: String(value), shouldHighlight: true };
+}
+
+function getAmountClass(tipo) {
+  if (tipo === "accused") return "amount-red";
+  if (tipo === "no_major_accusations_reported") return "amount-green";
+  return "amount-orange";
+}
+
+function describeTipo(tipo) {
+  switch (tipo) {
+    case "accused":
+      return "Buscado / acusado";
+    case "no_major_accusations_reported":
+      return "Sin acusaciones graves reportadas";
+    case "controversial":
+      return "Controversial / en investigación";
+    default:
+      return tipo || "N/A";
+  }
+}
