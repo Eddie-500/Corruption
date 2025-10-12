@@ -8,11 +8,16 @@
     "party": "PSUV",
     "flag_url": "https://flagcdn.com/ve.svg",
     "tipo": "accused",
-    "cantidad": null,
+    "cantidad": "Estimaciones opositoras: USD 300–400 mil millones (no oficiales, disputadas)",
     "valorCaptura": "$50,000,000",
-    "notable_contributions": "Mantuvo programas sociales subsidiados (CLAP) y control político.",
-    "acusaciones": "Sanciones y acusaciones de narcotráfico y corrupción; recompensa de EE.UU.",
-    "sources": []
+    "notable_contributions": "Mantenimiento de subsidios (CLAP) y alianzas geopolíticas; continuidad de programas sociales heredados del chavismo.",
+    "acusaciones": "Corrupción sistémica y malversación (PDVSA/CLAP), narcotráfico, violaciones a DD. HH., persecución a la oposición.",
+    "sources": [
+      "https://www.state.gov/nicolas-maduro-moros",
+      "https://www.state.gov/reward-offer-increase-of-up-to-50-million-for-information-leading-to-arrest-and-or-conviction-of-nicolas-maduro",
+      "https://ve.usembassy.gov/es/aumento-de-la-oferta-de-recompensa-de-hasta-50-millones-de-dolares-por-informacion-conducente-al-arresto-y-o-condena-de-nicolas-maduro/",
+      "https://es.wikipedia.org/wiki/Corrupci%C3%B3n_en_el_gobierno_de_Nicol%C3%A1s_Maduro"
+    ]
   },
   {
     "name": "Gustavo Petro",
@@ -25,9 +30,13 @@
     "tipo": "controversial",
     "cantidad": null,
     "valorCaptura": null,
-    "notable_contributions": "Reformas sociales y transición energética.",
-    "acusaciones": "Investigaciones por presunto financiamiento irregular de campaña.",
-    "sources": []
+    "notable_contributions": "Agenda de transición energética y reformas sociales; énfasis en justicia social y cambio climático.",
+    "acusaciones": "Investigaciones sobre presunto financiamiento irregular de campaña (vuelos y topes); caso “Papá Pitufo”.",
+    "sources": [
+      "https://www.infobae.com/colombia/2025/10/08/corte-suprema-pidio-formalmente-investigar-a-gustavo-petro-por-presuntas-irregularidades-en-financiacion-de-su-campana-en-2022/",
+      "https://elpais.com/america-colombia/2025-09-29/la-corte-suprema-de-justicia-de-colombia-abre-otra-investigacion-sobre-las-cuentas-de-la-campana-presidencial-de-gustavo-petro.html",
+      "https://apnews.com/article/76452fc67fca6392b6ac83891ddd2a35"
+    ]
   },
   {
     "name": "Luiz Inácio Lula da Silva",
@@ -40,9 +49,14 @@
     "tipo": "controversial",
     "cantidad": null,
     "valorCaptura": null,
-    "notable_contributions": "Programas sociales y liderazgo internacional.",
-    "acusaciones": "Condenas anuladas en casos de corrupción previos.",
-    "sources": []
+    "notable_contributions": "Relanzó Bolsa Família y programas contra el hambre/pobreza; liderazgo internacional de Brasil.",
+    "acusaciones": "Condenas por Lava Jato anuladas por el Supremo (irregularidades procesales y parcialidad).",
+    "sources": [
+      "https://elpais.com/internacional/2023-09-06/un-juez-del-supremo-de-brasil-la-prision-de-lula-fue-un-montaje-para-conquistar-el-estado.html",
+      "https://www.france24.com/es/am%C3%A9rica-latina/20240710-lava-jato-10-a%C3%B1os-la-investigaci%C3%B3n-anticorrupci%C3%B3n-que-cambi%C3%B3-a-brasil-para-siempre",
+      "https://elpais.com/internacional/2023-03-03/el-presidente-lula-reformula-el-exitoso-programa-bolsa-familia-para-combatir-la-pobreza-en-brasil.html",
+      "https://www.gov.br/secoms/en/latest-news/2024/12/2024-a-year-to-fight-hunger-and-reduce-poverty"
+    ]
   },
   {
     "name": "Gabriel Boric",
@@ -55,9 +69,14 @@
     "tipo": "controversial",
     "cantidad": null,
     "valorCaptura": null,
-    "notable_contributions": "Agenda progresista en derechos sociales.",
-    "acusaciones": "Investigación preliminar por denuncia de acoso.",
-    "sources": []
+    "notable_contributions": "Agenda social (40 horas, PGU, políticas de género) y empuje a transición energética.",
+    "acusaciones": "Denuncia por acoso (hechos presuntos 2013–2014) en investigación; su gobierno la califica de infundada.",
+    "sources": [
+      "https://www.infobae.com/america/america-latina/2024/11/26/denunciaron-al-presidente-chileno-gabriel-boric-por-acoso-sexual/",
+      "https://elpais.com/chile/2024-11-26/el-gobierno-de-boric-defiende-que-hizo-publica-la-denuncia-de-acoso-sexual-contra-el-presidente-para-avanzar-y-esclarecer-lo-ocurrido.html",
+      "https://minmujeryeg.gob.cl/?p=56567",
+      "https://prensa.presidencia.cl/comunicado.aspx?id=296167"
+    ]
   },
   {
     "name": "Javier Milei",
@@ -70,9 +89,13 @@
     "tipo": "controversial",
     "cantidad": null,
     "valorCaptura": null,
-    "notable_contributions": "Reformas económicas de choque; inflación mensual a mínimos de 5 años.",
-    "acusaciones": "Cuestionamientos políticos y causas financieras en investigación.",
-    "sources": []
+    "notable_contributions": "Desinflación fuerte en 2025 (1,5% mensual en mayo, mínimo en 5 años); programa de reformas pro-mercado.",
+    "acusaciones": "Cuestionamientos políticos y causas/investigaciones mediáticas; choques con el Congreso y Justicia por DNU y reformas.",
+    "sources": [
+      "https://chequeado.com/el-explicador/inflacion-en-vivo-el-indec-da-a-conocer-hoy-el-dato-de-mayo-de-2025/",
+      "https://elpais.com/argentina/2025-06-12/argentina-registra-la-inflacion-mas-baja-en-cinco-anos-fue-del-15-en-mayo.html",
+      "https://www.reuters.com/world/americas/argentina-lower-house-approves-law-curbing-presidential-decrees-2025-10-08/"
+    ]
   },
   {
     "name": "Claudia Sheinbaum",
@@ -85,9 +108,14 @@
     "tipo": "controversial",
     "cantidad": null,
     "valorCaptura": null,
-    "notable_contributions": "Primera mujer presidenta; reformas sociales y judiciales.",
-    "acusaciones": "Críticas por continuidad de políticas y reformas judiciales.",
-    "sources": []
+    "notable_contributions": "Primera mujer presidenta; impulso a reforma judicial y leyes secundarias; enfoque en recaudación sin alza de impuestos.",
+    "acusaciones": "Críticas por impacto de la reforma de amparo/justicia en independencia judicial y garantías.",
+    "sources": [
+      "https://www.gob.mx/presidencia/prensa/presidenta-envia-segundo-paquete-de-leyes-secundarias-de-la-reforma-al-poder-judicial-para-fortalecer-el-amparo-y-garantizar-justicia",
+      "https://elpais.com/mexico/2025-09-18/sheinbaum-propone-una-reforma-al-amparo-que-enciende-la-alarma-entre-la-oposicion-y-los-expertos-en-derecho.html",
+      "https://elpais.com/mexico/2025-10-06/el-golpe-en-la-mesa-de-sheinbaum-por-la-reforma-del-amparo-una-semana-de-disputas-que-empanaron-la-ley-clave-para-la-recaudacion.html",
+      "https://www.nycbar.org/reports/declaracion-en-la-que-expresa-su-preocupacion-por-la-propuesta-de-reforma-al-poder-judicial-mexicano/"
+    ]
   },
   {
     "name": "Nayib Bukele",
@@ -100,9 +128,14 @@
     "tipo": "controversial",
     "cantidad": null,
     "valorCaptura": null,
-    "notable_contributions": "Reducción drástica de homicidios con régimen de excepción.",
-    "acusaciones": "Denuncias de violaciones a DDHH y detenciones masivas.",
-    "sources": []
+    "notable_contributions": "Caída histórica de homicidios; seguridad como eje de gobierno.",
+    "acusaciones": "Señalamientos de violaciones a DD. HH., detenciones masivas y negociación previa con pandillas; denuncias por desapariciones.",
+    "sources": [
+      "https://www.latimes.com/espanol/internacional/articulo/2025-09-02/bukele-celebra-1-000-dias-sin-homicidios-en-el-salvador-pais-que-fue-considerado-el-mas-inseguro",
+      "https://www.swissinfo.ch/spa/el-salvador-reporta-39-homicidios-entre-enero-y-junio-de-2025%2C-el-33-%25-menos-que-en-2024/89615317",
+      "https://www.hrw.org/es/world-report/2025/country-chapters/el-salvador",
+      "https://www.rtve.es/noticias/20250620/salvador-registra-homicidios-desaparecidos-desde-2019/16632903.shtml"
+    ]
   },
   {
     "name": "Daniel Ortega",
@@ -115,9 +148,14 @@
     "tipo": "accused",
     "cantidad": null,
     "valorCaptura": null,
-    "notable_contributions": "Programas sociales en sus primeros mandatos.",
-    "acusaciones": "Represión política, cierre de medios, persecución de opositores.",
-    "sources": []
+    "notable_contributions": "Programas sociales iniciales; control político del Estado.",
+    "acusaciones": "Represión, cierre/ilegalización de ONG y medios, retiro de nacionalidad a opositores, persecución transnacional.",
+    "sources": [
+      "https://www.infobae.com/america/america-latina/2025/05/27/la-dictadura-de-daniel-ortega-disolvio-la-oficialista-union-de-periodistas-de-nicaragua-y-otras-14-ong/",
+      "https://www.reuters.com/world/americas/nicaraguas-ortega-extends-transnational-persecution-critics-un-rights-experts-2025-09-23/",
+      "https://www.reuters.com/world/americas/un-urges-nicaragua-account-over-120-people-forcibly-disappeared-since-2018-2025-10-03/",
+      "https://blogs.lse.ac.uk/latamcaribbean/2023/07/06/liberacion-presos-politicos-nicaragua-daniel-ortega-moderado/"
+    ]
   },
   {
     "name": "Xiomara Castro",
@@ -130,9 +168,13 @@
     "tipo": "controversial",
     "cantidad": null,
     "valorCaptura": null,
-    "notable_contributions": "Primera presidenta de Honduras; reformas sociales.",
-    "acusaciones": "Críticas por seguridad y manejo económico.",
-    "sources": []
+    "notable_contributions": "Compromisos públicos anticorrupción y seguridad; programas sociales.",
+    "acusaciones": "Escaso avance en combate a la corrupción y debilitamiento institucional; altos niveles de violencia persistentes.",
+    "sources": [
+      "https://www.hrw.org/world-report/2025/country-chapters/honduras",
+      "https://www.hrw.org/es/world-report/2024/country-chapters/honduras",
+      "https://www.crisisgroup.org/es/latin-america-caribbean/central-america/honduras/100-new-dawn-or-old-habits-resolving-honduras-security"
+    ]
   },
   {
     "name": "Bernardo Arévalo",
@@ -145,9 +187,12 @@
     "tipo": "no_major_accusations_reported",
     "cantidad": null,
     "valorCaptura": null,
-    "notable_contributions": "Agenda anticorrupción e institucionalidad.",
-    "acusaciones": "Obstáculos judiciales y políticos durante la transición.",
-    "sources": []
+    "notable_contributions": "Agenda anticorrupción e institucionalista; defensa del orden democrático tras una transición obstruida.",
+    "acusaciones": "Obstáculos judiciales y políticos durante y después de la transición (Fiscal General sancionada por EE. UU.).",
+    "sources": [
+      "https://apnews.com/article/guatemala-bernardo-arevalo-consuelo-porras-00004b1994b8d2e2eebdc720e7523966",
+      "https://www.reuters.com/world/americas/guatemala-attorney-general-determined-block-arevalo-office-sources-2023-10-19/"
+    ]
   },
   {
     "name": "Rodrigo Chaves",
@@ -160,9 +205,12 @@
     "tipo": "controversial",
     "cantidad": null,
     "valorCaptura": null,
-    "notable_contributions": "Reformas administrativas y fiscales.",
-    "acusaciones": "Controversias políticas por manejo de fondos y comunicación.",
-    "sources": []
+    "notable_contributions": "Reformas administrativas/fiscales y discurso anticorrupción; impulso a competitividad.",
+    "acusaciones": "Sanción del Banco Mundial por conducta sexual indebida (2008–2013) previa a su presidencia; polémicas de comunicación y financiamiento.",
+    "sources": [
+      "https://es-us.noticias.yahoo.com/deportes/rodrigo-chaves-economista-sancionado-acoso-153355819.html",
+      "https://radios.ucr.ac.cr/2022/03/doblecheck/enganos-rodrigo-chaves-acoso-sexual/"
+    ]
   },
   {
     "name": "José Raúl Mulino",
@@ -175,9 +223,14 @@
     "tipo": "controversial",
     "cantidad": null,
     "valorCaptura": null,
-    "notable_contributions": "Acuerdo migratorio con EE.UU.; enfoque en economía.",
-    "acusaciones": "Críticas por relación con Ricardo Martinelli.",
-    "sources": []
+    "notable_contributions": "Acuerdos migratorios con EE. UU.; medidas para cerrar/contener ruta del Darién.",
+    "acusaciones": "Críticas por dureza en política migratoria y cercanía política con Ricardo Martinelli.",
+    "sources": [
+      "https://www.reuters.com/world/americas/panama-start-deporting-migrants-darien-gap-within-months-2024-07-19/",
+      "https://www.reuters.com/world/americas/panama-launches-us-backed-deportation-flights-aimed-discouraging-migrants-2024-08-20/",
+      "https://www.reuters.com/latam/domestico/KQR7QEWITRIJXLHLR7ZSL3GHO4-2025-02-13/",
+      "https://elpais.com/america/2025-03-13/panama-anuncia-el-cierre-de-la-ruta-del-tapon-del-darien-por-la-que-han-cruzado-mas-de-un-millon-de-inmigrantes-camino-a-estados-unidos.html"
+    ]
   },
   {
     "name": "Luis Abinader",
@@ -190,9 +243,14 @@
     "tipo": "no_major_accusations_reported",
     "cantidad": null,
     "valorCaptura": null,
-    "notable_contributions": "Reformas económicas; reelección en 2024.",
-    "acusaciones": "Críticas en política exterior con Haití.",
-    "sources": []
+    "notable_contributions": "Reelección 2024; crecimiento económico sostenido y discurso anticorrupción; línea dura en frontera con Haití.",
+    "acusaciones": "Críticas por políticas fronterizas con Haití y cierres por disputa del canal.",
+    "sources": [
+      "https://www.reuters.com/world/americas/dominican-republic-voters-head-polls-incumbent-abinader-favorite-2024-05-19/",
+      "https://www.reuters.com/world/americas/dominican-republics-abinader-names-cabinet-posts-leaders-gather-inauguration-2024-08-16/",
+      "https://www.reuters.com/world/americas/dominican-republic-seal-border-dajabon-if-water-conflict-not-solved-by-thursday-2023-09-11/",
+      "https://www.aljazeera.com/news/2023/9/14/dominican-republic-to-shut-border-with-haiti-from-friday-president-says"
+    ]
   },
   {
     "name": "Miguel Díaz-Canel",
@@ -205,8 +263,14 @@
     "tipo": "controversial",
     "cantidad": null,
     "valorCaptura": null,
-    "notable_contributions": "Continuidad del régimen castrista.",
-    "acusaciones": "Crisis económica y represión de protestas.",
-    "sources": []
+    "notable_contributions": "Continuidad del régimen; manejo de crisis (sanitaria y energética).",
+    "acusaciones": "Represión y abusos tras protestas del 11J; crisis económica, apagones generalizados; sanciones de EE. UU. a funcionarios.",
+    "sources": [
+      "https://www.hrw.org/news/2025/07/11/cuba-protesters-detail-abuses-in-prison",
+      "https://www.state.gov/releases/office-of-the-spokesperson/2025/07/justice-for-the-cuban-people-on-the-fourth-anniversary-of-the-july-11-protests",
+      "https://apnews.com/article/4d158a947e5690500325359205b2adce",
+      "https://www.reuters.com/world/americas/how-cubas-electrical-grid-collapsed-what-comes-next-2024-10-18/",
+      "https://www.reuters.com/world/americas/cuban-president-sacks-economy-minister-controversy-grows-over-price-hikes-2024-02-02/"
+    ]
   }
 ]
